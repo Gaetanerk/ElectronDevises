@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://api.apilayer.com;">
+  <link href="./styles.css" rel="stylesheet">
+  <title>Hello World!</title>
+</head>
+
+<body>
+  <form id="formApp">
+    <input type="text" id="amount" placeholder="Entrer un montant en €">
+    <select id="devise">
+      <option>GBP Livre sterling</option>
+      <option>USD Dollar américain</option>
+      <option>JMD Dollar jamaïcain</option>
+      <option>ISK Couronne islandaise</option>
+      <option>ETB Birr éthiopien</option>
+      <option>AFN Afghani</option>
+      <option>ZAR Rand</option>
+      <option>ALL Lek</option>
+      <option>DZD Dinar algérien</option>
+      <option>AOA Kwanza</option>
+      <option>XCD Dollar des Caraïbes orientales</option>
+      <option>SAR Riyal saoudien</option>
+      <option>ARS Peso argentin</option>
+      <option>AMD Dram arménien</option>
+      <option>AWG Florin arubais</option>
+      <option>AUD Dollar australien</option>
+      <option>AZN Manat azerbaïdjanais</option>
+      <option>BSD Dollar bahaméen</option>
+      <option>BHD Dinar bahreïni</option>
+      <option>BDT Taka</option>
+      <option>BBD Dollar de la Barbade</option>
+      <option>BYN Rouble biélorusse</option>
+      <option>BZD Dollar bélizien</option>
+    </select>
+    <button id="convert" type="submit">Convertir</button>
+  </form>
+  <div id="result"></div>
+
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+</body>
+
+</html>
